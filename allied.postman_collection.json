@@ -1,0 +1,126 @@
+{
+	"id": "ef9e418b-3b7b-421d-a597-eefe78d70e13",
+	"name": "allied",
+	"description": "",
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"3d52f367-4ac7-448e-8110-9fda65665cde",
+		"b352fc94-0930-463f-a18a-8ca2a98208b3",
+		"51c48135-79bc-4e9d-a8b4-5ff363f352e3"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "3d52f367-4ac7-448e-8110-9fda65665cde",
+			"name": "Login",
+			"url": "http://your_tes_url/version1/staff/login",
+			"description": "",
+			"data": [
+				{
+					"key": "email",
+					"value": "test@google.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "matkhau",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "",
+			"pathVariables": {}
+		},
+		{
+			"id": "51c48135-79bc-4e9d-a8b4-5ff363f352e3",
+			"name": "Update info",
+			"url": "http://your_tes_url/version1/staff/update",
+			"description": "",
+			"data": [
+				{
+					"key": "name",
+					"value": "Admin",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "phone",
+					"value": "123321",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "email",
+					"value": "kaka@a.a",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "address",
+					"value": "ok fine fine",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "cixi7nbGQ9rQm8Hr6q3mK-hAaINHpRBt",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "token: cixi7nbGQ9rQm8Hr6q3mK-hAaINHpRBt\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "b352fc94-0930-463f-a18a-8ca2a98208b3",
+			"name": "Get info",
+			"url": "http://your_tes_url/version1/staff/detail",
+			"description": "",
+			"data": null,
+			"dataMode": "params",
+			"headerData": [
+				{
+					"key": "token",
+					"value": "cixi7nbGQ9rQm8Hr6q3mK-hAaINHpRBt",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "token: cixi7nbGQ9rQm8Hr6q3mK-hAaINHpRBt\n",
+			"pathVariables": {}
+		}
+	]
+}

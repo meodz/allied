@@ -1,0 +1,26 @@
+-- Adminer 4.6.2 MySQL dump
+
+SET NAMES utf8;
+SET time_zone = '+00:00';
+SET foreign_key_checks = 0;
+SET sql_mode = 'NO_AUTO_VALUE_ON_ZERO';
+
+DROP TABLE IF EXISTS `staff`;
+CREATE TABLE `staff` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(150) DEFAULT NULL,
+  `phone` varchar(150) DEFAULT NULL,
+  `email` varchar(150) NOT NULL,
+  `password` varchar(150) NOT NULL,
+  `address` text,
+  `token` varchar(250) DEFAULT '0',
+  `expiredTime` int(11) DEFAULT NULL,
+  `updatedTime` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `email` (`email`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+INSERT INTO `staff` (`id`, `name`, `phone`, `email`, `password`, `address`, `token`, `expiredTime`, `updatedTime`) VALUES
+(1,	'Admin',	'123321',	'test@google.com',	'$2y$10$AE0bqL2PwnlOJfWj7ckvQeB88n01kNurBYOQt/E17XjUQGp8q7Dhq',	'ok fine fine',	'liT77Mi3Cxzhj0wGZVRWz_tPI4mSjzAG',	1529589484,	1528984684);
+
+-- 2018-06-14 13:59:49

@@ -1,0 +1,39 @@
+{
+  "name": "test/test",
+  "description": "test",
+  "keywords": [
+    "test",
+    "cross-border"
+  ],
+  "homepage": "http://test.vn/",
+  "type": "project",
+  "license": "BSD-3-Clause",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.4.0",
+    "yiisoft/yii2": ">=2.0.4",
+    "yiisoft/yii2-redis": "~2.0.0",
+    "dmstr/yii2-adminlte-asset": "2.*",
+    "yiisoft/yii2-sphinx": "*",
+    "iutbay/yii2-fontawesome": "*",
+    "yiisoft/yii2-debug": "*",
+    "yiisoft/yii2-gii": "*",
+    "yiisoft/yii2-swiftmailer": "*",
+    "rmrevin/yii2-minify-view": "^1.15",
+    "nodge/yii2-eauth": "*",
+    "fabpot/goutte": "*",
+    "damirka/yii2-jwt": "v0.2.1"
+  },
+  "require-dev": {
+  },
+  "config": {
+    "process-timeout": 1800
+  },
+  "extra": {
+    "asset-installer-paths": {
+      "npm-asset-library": "vendor/npm",
+      "bower-asset-library": "vendor/bower"
+    }
+  }
+}
